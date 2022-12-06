@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ALİS MATBAA OFSET</title>
+
+    <!-- mobile responsive meta -->  <!--  meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <link rel="stylesheet" href="@Url.Content("~/Content/Site/css/style.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/Site/css/responsive.css")">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+
+</head>
+<body>
+
+    <div class="boxed_wrapper">
+
+        <header class="top-bar">
+            <div class="container">
+                <div class="clearfix">
+                    <ul class="top-bar-text float_left">
+                        <li><i class="flaticon-telephone"></i>Phone 0(232) 458 20 24</li>
+                        <li><i class="flaticon-envelope"></i>info@alismatbaa.com</li>
+                    </ul>
+                    <ul class="social-style-one float_right">
+                        <li><a href="https://www.facebook.com/AL%C4%B0S-Matbaac%C4%B1l%C4%B1k-Ofset-429201400512172/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/AlisMatbaa?lang=tr" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/alis-matbaac%C4%B1l%C4%B1k-ofset"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://tr.foursquare.com/v/alis-matbaacilik-s%C3%BCrekli-form/51c19f8e498e8c2d16650b61"><i class="fa fa-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+
+        <section class="mainmenu-area stricky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="main-logo">
+                            <a href="index.html"><img src="@Url.Content("~/Content/Site/images/logo/logoalis.png")" alt="logo"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 menu-column">
+                        <nav class="main-menu">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+
+                                    <li>
+                                        <a href="index.html">Home</a>
+
+                                    </li>
+
+                                    <li>
+                                        <a href="#">About</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Production</a>
+
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a href="#">Product</a>
+                                        <ul>
+                                            <li><a href="^#"> Catalog</a></li>
+                                            <li><a href="#">Agenda</a></li>
+                                            <li><a href="#">Business Card</a></li>
+                                            <li> <a href="^#"> Catalog</a></li>
+                                            <li><a href="#">Calendar</a></li>
+                                        </ul>
+                                    </li>
+
+
+                             
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+
+                                <ul class="mobile-menu clearfix">
+
+                                    <li class="dropdown">
+                                        <a href="index.html">Home</a>
+                                        
+</li>
+
+                                    <li class="dropdown">
+                                        <a href="#">About</a>
+           
+                                    </li>
+
+                                  
+
+                                   
+
+                                    
+
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+
+
+
+                    <div class="col-md-2">
+                        <div class="right-column">
+                            <div class="right-area">
+                                <div class="link-btn4 float_right">
+                                    <a href="@Url.Action("Index","Login")" class="btn-style-one">Sign In</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        
+        
+
+        @RenderBody()
+        <footer class="main-footer" >
+            <div class="container-footer">
+                <div class="row-footer">
+                    <div class="main-footer-col">
+                        <h4>Alis</h4>
+                        <ul style="list-style:none;">
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">Production</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Sign In</a></li>
+                        </ul>
+                    </div>
+                  
+                    <div class="main-footer-col">
+                        <h4>Product</h4>
+                        <ul style="list-style:none;">
+                            <li><a href="#">Catolog</a></li>
+                            <li><a href="#">Agenda</a></li>
+                            <li><a href="#">Business Card</a></li>
+                            <li><a href="#">Calendar</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-style-one social-links a">
+                            <a href="https://www.facebook.com/AL%C4%B0S-Matbaac%C4%B1l%C4%B1k-Ofset-429201400512172/" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="https://twitter.com/AlisMatbaa?lang=tr" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/company/alis-matbaac%C4%B1l%C4%B1k-ofset"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://tr.foursquare.com/v/alis-matbaacilik-s%C3%BCrekli-form/51c19f8e498e8c2d16650b61"><i class="fa fa-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- BURADAAA KALDINNN -->
+       
+        <!-- Scroll Top Button -->
+        <button class="scroll-top tran3s color2_bg">
+            <span class="fa fa-angle-up"></span>
+        </button>
+        <!-- pre loader  -->
+        <div class="preloader"></div>
+
+
+        <!-- jQuery js -->
+        <script src="@Url.Content("~/Content/Site/js/jquery.js")"></script>
+        <!-- bootstrap js -->
+        <script src="@Url.Content("~/Content/Site/js/bootstrap.min.js")"></script>
+        <!-- jQuery ui js -->
+        <script src="@Url.Content("~/Content/Site/js/jquery-ui.js")"></script>
+        <!-- owl carousel js -->
+        <script src="@Url.Content("~/Content/Site/js/owl.carousel.min.js")"></script>
+        <!-- jQuery validation -->
+        <script src="@Url.Content("~/Content/Site/js/jquery.validate.min.js")"></script>
+        <!-- google map -->
+        <script src="@Url.Content("~/Content/Site/https://maps.googleapis.com/maps/api/js?key=AIzaSyCRvBPo3-t31YFk588DpMYS6EqKf-oGBSI")"></script>
+        <script src="@Url.Content("~/Content/Site/js/gmap.js")"></script>
+        <!-- mixit up -->
+        <script src="@Url.Content("~/Content/Site/js/wow.js")"></script>
+        <script src="@Url.Content("~/Content/Site/js/jquery.mixitup.min.js")"></script>
+        <script src="@Url.Content("~/Content/Site/js/jquery.fitvids.js")"></script>
+        <script src="@Url.Content("~/Content/Site/js/bootstrap-select.min.js")"></script>
+
+        <!-- revolution slider js -->
+        <script src="@Url.Content("~/Content/Site/assets/revolution/js/jquery.themepunch.tools.min.js")"></script>
+        <script src="@Url.Content("~/Content/Site/assets/revolution/js/jquery.themepunch.revolution.min.js")"></script>
+        <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.actions.min.js")"></script>
+        <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.carousel.min.js")"></script>
+        <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.kenburn.min.js")"></script>
+        <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js")"></script>
+        <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.migration.min.js")"></script>
+        <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.navigation.min.js")"></script>
+        <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.parallax.min.js")"></script>
+        <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.slideanims.min.js")"></script>
+        <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.video.min.js")"></script>
+
+        <!-- fancy box -->
+        <script src="@Url.Content("~/Content/Site/js/jquery.fancybox.pack.js")"></script>
+        <script src="@Url.Content("~/Content/Site/js/jquery.polyglot.language.switcher.js")"></script>
+        <script src="@Url.Content("~/Content/Site/js/nouislider.js")"></script>
+        <script src="@Url.Content("~/Content/Site/js/jquery.bootstrap-touchspin.js")"></script>
+        <script src="@Url.Content("~/Content/Site/js/SmoothScroll.js")"></script>
+        <script src="@Url.Content("~/Content/Site/js/jquery.appear.js")"></script>
+        <script src="@Url.Content("~/Content/Site/js/jquery.countTo.js")"></script>
+        <script src="@Url.Content("~/Content/Site/js/jquery.flexslider.js")"></script>
+        <script src="@Url.Content("~/Content/Site/js/imagezoom.js")"></script>
+        <script id="map-script" src="@Url.Content("~/Content/Site/js/default-map.js")"></script>
+        <script src="@Url.Content("~/Content/Site/js/custom.js")"></script>
+
+    </div>
+
+</body>
+</html>
