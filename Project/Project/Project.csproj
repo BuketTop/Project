@@ -125,6 +125,10 @@
     <Content Include="Content\Site\css\style.css" />
     <Content Include="Content\Site\fonts\flaticon.css" />
     <Content Include="Content\Site\images\background\5.jpg" />
+    <Content Include="Content\Site\images\background\heidelberg_.jpg" />
+    <Content Include="Content\Site\images\background\paketleme.jpg" />
+    <Content Include="Content\Site\images\background\prepress.jpg" />
+    <Content Include="Content\Site\images\background\printing.jpg" />
     <Content Include="Content\Site\images\icons\preloader1.gif" />
     <Content Include="Content\Site\images\icon\1-circle.svg" />
     <Content Include="Content\Site\images\icon\2-circle.svg" />
@@ -133,6 +137,18 @@
     <Content Include="Content\Site\images\logo\favicon.png" />
     <Content Include="Content\Site\images\logo\logo852.png" />
     <Content Include="Content\Site\images\logo\logoalis.png" />
+    <Content Include="Content\Site\images\Product\Agenda\agenda.jpg" />
+    <Content Include="Content\Site\images\Product\BusinessCard\Business_cards.jpg" />
+    <Content Include="Content\Site\images\Product\Calender\2021-0003-P-UcgenTakvim.jpg" />
+    <Content Include="Content\Site\images\Product\Calender\2021-0006-P-KaideliTakvim.jpg" />
+    <Content Include="Content\Site\images\Product\Calender\2021-0008-P-DuvarTakvimi.jpg" />
+    <Content Include="Content\Site\images\Product\Calender\2021-0010-P-UcgenTakvim.jpg" />
+    <Content Include="Content\Site\images\Product\CardboardBag\2021-0009-P-KraftCanta.jpg" />
+    <Content Include="Content\Site\images\Product\CardboardBag\KartonCanta.jpg" />
+    <Content Include="Content\Site\images\Product\Catalog\catalog.jpg" />
+    <Content Include="Content\Site\images\Product\PaperCup\2021-0007-P-KartonBardak.jpg" />
+    <Content Include="Content\Site\images\Product\SpiralNotebook\Spiralli-Defter.jpg" />
+    <Content Include="Content\Site\images\Product\Swatchcard\2021-0011-P-Kartela.jpg" />
     <Content Include="Content\Site\images\resource\tb.png" />
     <Content Include="Content\Site\images\resource\tb2.png" />
     <Content Include="Content\Site\images\slider\matbaa.jpg" />
@@ -165,8 +181,18 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\AgendaController.cs" />
+    <Compile Include="Controllers\BusinessCardController.cs" />
+    <Compile Include="Controllers\CalenderController.cs" />
+    <Compile Include="Controllers\CardboardBagController.cs" />
+    <Compile Include="Controllers\CatalogController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\PaperCupController.cs" />
+    <Compile Include="Controllers\ProductionController.cs" />
+    <Compile Include="Controllers\SpiralNotebookController.cs" />
+    <Compile Include="Controllers\SwatchCardController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -183,6 +209,16 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\About\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Agenda\Index.cshtml" />
+    <Content Include="Views\BusinessCard\Index.cshtml" />
+    <Content Include="Views\Calender\Index.cshtml" />
+    <Content Include="Views\CardboardBag\Index.cshtml" />
+    <Content Include="Views\Catalog\Index.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\PaperCup\Index.cshtml" />
+    <Content Include="Views\Production\Index.cshtml" />
+    <Content Include="Views\SpiralNotebook\Index.cshtml" />
+    <Content Include="Views\SwatchCard\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

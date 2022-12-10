@@ -44,7 +44,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="main-logo">
-                            <a href="index.html"><img src="@Url.Content("~/Content/Site/images/logo/logoalis.png")" alt="logo"></a>
+                            <a href="@Url.Action("","")"><img src="@Url.Content("~/Content/Site/images/logo/logoalis.png")" alt="logo"></a>
                         </div>
                     </div>
 
@@ -62,54 +62,52 @@
                                 <ul class="navigation clearfix">
 
                                     <li>
-                                        <a href="index.html">Home</a>
+                                        <a href="@Url.Action("","")">Home</a>
 
                                     </li>
 
                                     <li>
-                                        <a href="#">About</a>
+                                        <a href="@Url.Action("Index","About")">About</a>
                                     </li>
 
                                     <li>
-                                        <a href="#">Production</a>
+                                        <a href="@Url.Action("Index","Production")">Production</a>
 
                                     </li>
 
                                     <li class="dropdown">
                                         <a href="#">Product</a>
                                         <ul>
-                                            <li><a href="^#"> Catalog</a></li>
-                                            <li><a href="#">Agenda</a></li>
-                                            <li><a href="#">Business Card</a></li>
-                                            <li> <a href="^#"> Catalog</a></li>
-                                            <li><a href="#">Calendar</a></li>
+                                            <li><a href="@Url.Action("Index","Agenda")">Agenda</a></li>
+                                            <li><a href="@Url.Action("Index","BusinessCard")">Business Card</a></li>
+                                            <li><a href="@Url.Action("Index","Calender")">Calendar</a></li>
+                                            <li><a href="@Url.Action("Index","CardboardBag")">Cardboard Bag</a></li>
+                                            <li><a href="@Url.Action("Index","Catalog")"> Catalog</a></li>
+                                            <li><a href="@Url.Action("Index","PaperCup")">Paper Cup</a></li>
+                                            <li> <a href="@Url.Action("Index","SpiralNotebook")">Spiral Notebook</a></li>
+                                            <li><a href="@Url.Action("Index","SwatchCard")">Swatch Card</a></li>
+
                                         </ul>
                                     </li>
 
 
-                             
-                                    <li><a href="contact.html">Contact</a></li>
+
+                                    <li><a href="@Url.Action("Index","Contact")">Contact</a></li>
                                 </ul>
 
                                 <ul class="mobile-menu clearfix">
 
                                     <li class="dropdown">
-                                        <a href="index.html">Home</a>
-                                        
-</li>
+                                        <a href="@Url.Action("","")">Home</a>
 
-                                    <li class="dropdown">
-                                        <a href="#">About</a>
-           
                                     </li>
 
-                                  
+                                    <li class="dropdown">
+                                        <a href="@Url.Action("Index","About")">About</a>
 
-                                   
+                                    </li>
 
-                                    
-
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="@Url.Action("Index","Contact")">Contact</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -132,30 +130,42 @@
         </section>
 
 
-        
-        
+
+
 
         @RenderBody()
-        <footer class="main-footer" >
+        <footer class="main-footer">
             <div class="container-footer">
                 <div class="row-footer">
+
+
                     <div class="main-footer-col">
+
                         <h4>Alis</h4>
                         <ul style="list-style:none;">
-                            <li><a href="#">about</a></li>
-                            <li><a href="#">Production</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Sign In</a></li>
+                            <li><a href="@Url.Action("Index","Home")">Home</a></li>
+                            <li><a href="@Url.Action("Index","About")">About</a></li>
+                            <li><a href="@Url.Action("Index","Production")">Production</a></li>
+                            <li><a href="@Url.Action("Index","Catalog")">Product</a></li>
+                            <li><a href="@Url.Action("Index","Contact")">Contact</a></li>
+                            <li><a href="@Url.Action("Index","Sign In")">Sign In</a></li>
                         </ul>
                     </div>
-                  
+
+
+
+
                     <div class="main-footer-col">
                         <h4>Product</h4>
                         <ul style="list-style:none;">
-                            <li><a href="#">Catolog</a></li>
-                            <li><a href="#">Agenda</a></li>
-                            <li><a href="#">Business Card</a></li>
-                            <li><a href="#">Calendar</a></li>
+                            <li><a href="@Url.Action("Index","Agenda")">Agenda</a></li> <!-- Merve Düzenleme-->
+                            <li><a href="@Url.Action("Index","BusinessCard")">Business Card</a></li>
+                            <li><a href="@Url.Action("Index","Calender")">Calendar</a></li>
+                            <li><a href="@Url.Action("Index","CardboardBag")">Cardboard Bag</a></li>
+                            <li><a href="@Url.Action("Index","Catalog")"> Catalog</a></li>
+                            <li><a href="@Url.Action("Index","PaperCup")">Paper Cup</a></li>
+                            <li> <a href="@Url.Action("Index","SpiralNotebook")">Spiral Notebook</a></li>
+                            <li><a href="@Url.Action("Index","SwatchCard")">Swatch Card</a></li>
                         </ul>
                     </div>
                     <div class="main-footer-col">
@@ -169,10 +179,18 @@
                     </div>
                 </div>
             </div>
+            <div class="container">
+                <div class="border-color-extra-light-gray border-top padding-40px-top sm-padding-30px-top">
+                    <div class="row">
+                        <div class="col-12 text-small text-center text-medium-gray" style="padding : 15px ;">
+                            © 2022 Alis printing. All rights reserved <a href="@Url.Action("Index","Home")" target="_blank" title="Printery Project" class="text-medium-gray">Printery Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
 
         <!-- BURADAAA KALDINNN -->
-       
         <!-- Scroll Top Button -->
         <button class="scroll-top tran3s color2_bg">
             <span class="fa fa-angle-up"></span>
