@@ -3,10 +3,20 @@
     "",
     "\\Project",
     "\\Project\\Project",
+<<<<<<< HEAD
     "\\Project\\Project\\Views",
     "\\Project\\Project\\Views\\About",
     "\\Project\\Project\\Views\\Shared"
   ],
   "SelectedNode": "\\Project\\Project.sln",
+=======
+    "\\Project\\Project\\Controllers",
+    "\\Project\\Project\\Views",
+    "\\Project\\Project\\Views\\About",
+    "\\Project\\Project\\Views\\Contact",
+    "\\Project\\Project\\Views\\Shared"
+  ],
+  "SelectedNode": "\\Project\\Project\\Views\\Contact\\Index.cshtml",
+>>>>>>> a7120ee5e6bc66c931766cff8b5569244af9a74c
   "PreviewInSolutionExplorer": false
 }

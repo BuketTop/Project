@@ -151,6 +151,7 @@
     <Content Include="Content\Site\images\Product\Swatchcard\2021-0011-P-Kartela.jpg" />
     <Content Include="Content\Site\images\resource\tb.png" />
     <Content Include="Content\Site\images\resource\tb2.png" />
+    <Content Include="Content\Site\images\slider\about.png" />
     <Content Include="Content\Site\images\slider\matbaa.jpg" />
     <Content Include="Content\Site\images\slider\matbaa2.jpg" />
     <Content Include="Content\Site\js\bootstrap-select.min.js" />
