@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -18,7 +17,23 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+    <style>
+        .row {
+            margin-right: -15px;
+            margin-left: -15px;
+        }
 
+        .align-items-center {
+            align-items: center !important;
+        }
+
+        .row {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
 </head>
 <body>
 
@@ -35,82 +50,37 @@
             </div>
         </div>
 
-        <div class="single-projects">
+        <div class="single-projects" style=" padding: 200px 0px;">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                        <br><br>
-                        <div class="inner-title">
-                            <h3>Since 1971..</h3>
-                        </div>
-                        <div class="text">
-                            <p>
-                                As Alis Printery, although we were established a short time ago, we are the solution partner of more than three thousand companies operating in various sectors in Izmir, with 51 years of experience of our founder Avni Alançay. We have increased our product range in order to meet all the printing needs of our customers in this way, which was started for the printing of official printed documents (Invoice, Waybill, etc.). We have an innovative structure in line with the developing technology and customer demands, and we continue to renew ourselves without sacrificing quality.
-                            </p>
-                            <br>
-                            <p> HAKKIMIZDA YAZISINA DEVAM ET...</p>   <!--DÜZENLE-->
-                        </div><br><br>
+                
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-5 col-md-6 text-center md-margin-30px-bottom wow animate__fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                        <img src="~/Content/Site/images/slider/about.png" alt="" class="border-radius-6 w-100" data-no-retina="" style="animation-name: fadeInLeft; max-width:450px">
+                    </div>
+                    <div class="col-12 col-lg-7 col-md-6 text-center text-md-start padding-eight-lr lg-padding-six-lr md-padding-15px-lr wow animate__fadeInRight" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
+
+                        <h3 class="alt-font text-extra-dark-gray mb-3">“Journey to the World of Printing”</h3> <br />
+                        <p>
+                            As Alis Printery, although we were established a short time ago, we are the solution partner of more than three thousand companies operating in various sectors in Izmir, with 51 years of experience of our founder Avni Alançay. We have increased our product range in order to meet all the printing needs of our customers in this way, which was started for the printing of official printed documents (Invoice, Waybill, etc.). We have an innovative structure in line with the developing technology and customer demands, and we continue to renew ourselves without sacrificing quality.
+                        </p>
 
                     </div>
+                </div> <!-- buraya kadar-->
 
-                </div>
+
             </div>
         </div>
-
-        <!-- Scroll Top Button -->
-        <button class="scroll-top tran3s color2_bg">
-            <span class="fa fa-angle-up"></span>
-        </button>
-        <!-- pre loader  -->
-        <div class="preloader"></div>
-
-
-        <!-- jQuery js -->
-        <script src="@Url.Content("~/Content/Site/js/jquery.js")"></script>
-        <!-- bootstrap js -->
-        <script src="@Url.Content("~/Content/Site/js/bootstrap.min.js")"></script>
-        <!-- jQuery ui js -->
-        <script src="@Url.Content("~/Content/Site/js/jquery-ui.js")"></script>
-        <!-- owl carousel js -->
-        <script src="@Url.Content("~/Content/Site/js/owl.carousel.min.js")"></script>
-        <!-- jQuery validation -->
-        <script src="@Url.Content("~/Content/Site/js/jquery.validate.min.js")"></script>
-        <!-- google map -->
-        <script src="@Url.Content("~/Content/Site/https://maps.googleapis.com/maps/api/js?key=AIzaSyCRvBPo3-t31YFk588DpMYS6EqKf-oGBSI")"></script>
-        <script src="@Url.Content("~/Content/Site/js/gmap.js")"></script>
-        <!-- mixit up -->
-        <script src="@Url.Content("~/Content/Site/js/wow.js")"></script>
-        <script src="@Url.Content("~/Content/Site/js/jquery.mixitup.min.js")"></script>
-        <script src="@Url.Content("~/Content/Site/js/jquery.fitvids.js")"></script>
-        <script src="@Url.Content("~/Content/Site/js/bootstrap-select.min.js")"></script>
-
-        <!-- revolution slider js -->
-        <script src="assets/revolution/js/jquery.themepunch.tools.min.js"></script>
-        <script src="assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
-        <script src="assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-        <script src="assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-        <script src="assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-        <script src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script src="assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-        <script src="assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-        <script src="assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-        <script src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script src="assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
-
-        <!-- fancy box -->
-        <script src="js/jquery.fancybox.pack.js"></script>
-        <script src="js/jquery.polyglot.language.switcher.js"></script>
-        <script src="js/nouislider.js"></script>
-        <script src="js/jquery.bootstrap-touchspin.js"></script>
-        <script src="js/SmoothScroll.js"></script>
-        <script src="js/jquery.appear.js"></script>
-        <script src="js/jquery.countTo.js"></script>
-        <script src="js/jquery.flexslider.js"></script>
-        <script src="js/imagezoom.js"></script>
-        <script id="map-script" src="js/default-map.js"></script>
-        <script src="js/custom.js"></script>
-
     </div>
+
+    <!-- Scroll Top Button -->
+    <button class="scroll-top tran3s color2_bg">
+        <span class="fa fa-angle-up"></span>
+    </button>
+    <!-- pre loader  -->
+    <div class="preloader"></div>
+
+
+
 
 </body>
 </html>
