@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Project",
+    "\\Project\\Project",
+    "\\Project\\Project\\Views",
+    "\\Project\\Project\\Views\\About",
+    "\\Project\\Project\\Views\\Shared"
   ],
+  "SelectedNode": "\\Project\\Project.sln",
   "PreviewInSolutionExplorer": false
 }
