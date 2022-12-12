@@ -125,6 +125,7 @@
     <Content Include="Content\Site\css\style.css" />
     <Content Include="Content\Site\fonts\flaticon.css" />
     <Content Include="Content\Site\images\background\5.jpg" />
+    <Content Include="Content\Site\images\background\banner.jpg" />
     <Content Include="Content\Site\images\background\heidelberg_.jpg" />
     <Content Include="Content\Site\images\background\paketleme.jpg" />
     <Content Include="Content\Site\images\background\prepress.jpg" />
