@@ -1,6 +1,5 @@
 ﻿
 
-
 @{
 
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -24,6 +23,27 @@
         .bg-extra-dark-gray {
             background-color: #1c1c1c;
         }
+
+        img {
+            height: auto;
+            max-width: 100%;
+        }
+
+        .image-table {
+            border: 0px solid rgba(0, 0, 0, 0);
+            border-collapse: separate;
+            border-spacing: 6px;
+            table-layout: fixed;
+            text-align: center;
+            width: 100%;
+        }
+
+            .image-table img {
+                border: 10px solid #fff;
+                box-sizing: border-box;
+                -webkit-box-shadow: 0 0 10px #999;
+                box-shadow: 0 0 10px #999;
+            }
     </style>
 
 
@@ -34,26 +54,25 @@
         <h1 class="alt-font text-white-2 font-weight-600 mb-0 text-uppercase">PRODUCT / SWATCH CARD</h1>
     </div>
 
-    <section class="wow animate__fadeIn" style="visibility: visible; animation-name: fadeIn; padding : 100px">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 filter-content overflow-hidden">
-                    <ul class="hover-option4 lightbox-gallery portfolio-wrapper grid grid-6col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-small" style="position: relative; height: 600px;">
-                        <li class="grid-sizer"></li>
-                        <li class="grid-item wow animate__fadeInUp" style="position: absolute; left: 0%; top: 0px; animation: 0s ease 0s 1 normal none running none;">
-                            <a href="" data-group="lightbox-gallery">
-                                <figure>
-                                    <!--DÜZENLE-->
-                                    <img src="~/Content/Site/images/Product/Swatchcard/2021-0011-P-Kartela.jpg" style=" max-width: 80%; display: inline-block;" alt="" class="project-img-gallery" data-no-retina="">
+    <div class="container" style="padding-top:60px; padding-bottom: 60px;">
+        <table class="image-table">
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="~/Content/Site/images/Product/Swatchcard/2021-0011-P-Kartela.jpg" style="position:initial">
 
-                                </figure>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <h6 class="text-extra-dark-gray text-center m-bold">SWATCH CARD</h6>
-        </div>
-    </section>
+
+                    </td>
+                    <td>
+                        <img src="~/Content/Site/images/Product/Swatchcard/2021-0011-P-Kartela.jpg" style="position:center;">
+                    </td>
+                    <td>
+                        <img src="~/Content/Site/images/Product/Swatchcard/2021-0011-P-Kartela.jpg" style="position:revert">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
 </body>
 </html>
