@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ALİS MATBAA OFSET Admin</title>
+
+    <!-- mobile responsive meta -->  <!--  meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <link rel="stylesheet" href="@Url.Content("~/Content/Site/css/style.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/Site/css/responsive.css")">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+
+</head>
+<body>
+    <div class="content">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Alis Matbaa</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="/Order/OrderList">Order List</a></li>
+                            <li><a href="/Order/NewOrder">Add Order</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/Login/Logout">Exit</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <div class="row">
+                <div class="col-lg-12">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery js -->
+    <script src="@Url.Content("~/Content/Site/js/jquery.js")"></script>
+    <!-- bootstrap js -->
+    <script src="@Url.Content("~/Content/Site/js/bootstrap.min.js")"></script>
+    <!-- jQuery ui js -->
+    <script src="@Url.Content("~/Content/Site/js/jquery-ui.js")"></script>
+    <!-- owl carousel js -->
+    <script src="@Url.Content("~/Content/Site/js/owl.carousel.min.js")"></script>
+    <!-- jQuery validation -->
+    <script src="@Url.Content("~/Content/Site/js/jquery.validate.min.js")"></script>
+    <!-- google map -->
+    <script src="@Url.Content("~/Content/Site/https://maps.googleapis.com/maps/api/js?key=AIzaSyCRvBPo3-t31YFk588DpMYS6EqKf-oGBSI")"></script>
+    <script src="@Url.Content("~/Content/Site/js/gmap.js")"></script>
+    <!-- mixit up -->
+    <script src="@Url.Content("~/Content/Site/js/wow.js")"></script>
+    <script src="@Url.Content("~/Content/Site/js/jquery.mixitup.min.js")"></script>
+    <script src="@Url.Content("~/Content/Site/js/jquery.fitvids.js")"></script>
+    <script src="@Url.Content("~/Content/Site/js/bootstrap-select.min.js")"></script>
+
+    <!-- revolution slider js -->
+    <script src="@Url.Content("~/Content/Site/assets/revolution/js/jquery.themepunch.tools.min.js")"></script>
+    <script src="@Url.Content("~/Content/Site/assets/revolution/js/jquery.themepunch.revolution.min.js")"></script>
+    <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.actions.min.js")"></script>
+    <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.carousel.min.js")"></script>
+    <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.kenburn.min.js")"></script>
+    <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js")"></script>
+    <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.migration.min.js")"></script>
+    <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.navigation.min.js")"></script>
+    <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.parallax.min.js")"></script>
+    <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.slideanims.min.js")"></script>
+    <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.video.min.js")"></script>
+
+    <!-- fancy box -->
+    <script src="@Url.Content("~/Content/Site/js/jquery.fancybox.pack.js")"></script>
+    <script src="@Url.Content("~/Content/Site/js/jquery.polyglot.language.switcher.js")"></script>
+    <script src="@Url.Content("~/Content/Site/js/nouislider.js")"></script>
+    <script src="@Url.Content("~/Content/Site/js/jquery.bootstrap-touchspin.js")"></script>
+    <script src="@Url.Content("~/Content/Site/js/SmoothScroll.js")"></script>
+    <script src="@Url.Content("~/Content/Site/js/jquery.appear.js")"></script>
+    <script src="@Url.Content("~/Content/Site/js/jquery.countTo.js")"></script>
+    <script src="@Url.Content("~/Content/Site/js/jquery.flexslider.js")"></script>
+    <script src="@Url.Content("~/Content/Site/js/imagezoom.js")"></script>
+    <script id="map-script" src="@Url.Content("~/Content/Site/js/default-map.js")"></script>
+    <script src="@Url.Content("~/Content/Site/js/custom.js")"></script>
+
+
+</body>
+</html>

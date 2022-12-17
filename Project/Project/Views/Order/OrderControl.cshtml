@@ -1,0 +1,132 @@
+﻿@model Project.Model.Entity.Order
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="active">Order </li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <form method="post" action="/Order/OrderControl">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Order No</label>
+                    <input type="text" class="form-control" value="@(Model.OrderNo)" name="OrderNo">
+                    <button type="submit" class="btn btn-primary">Sorgula</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    @if (Model.Id > 0)
+    {
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        @(Model.OrderNo) Numbered Order Detail
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Order No</label>
+                                    <input type="text" class="form-control" value="@(Model.OrderNo)" name="OrderNo" readonly>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Name</label>
+                                    <input type="text" class="form-control" value="@(Model.Name)" name="Name" readonly>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Surname</label>
+                                    <input type="text" class="form-control" value="@(Model.Surname)" name="Surname" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Mail</label>
+                                    <input type="text" class="form-control" value="@(Model.Mail)" name="Mail" readonly>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Phone</label>
+                                    <input type="text" class="form-control" value="@(Model.PhoneNumber)" name="PhoneNumber" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Order Date</label>
+                                    <input type="text" class="form-control" value="@(Model.OrderDate)" name="OrderDate" readonly>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Total Amount</label>
+                                    <input type="text" class="form-control" value="@(Model.OrderTotal)" name="OrderTotal" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <form method="post" action="/Order/ChangeOrderStatus">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Order status</label>
+                                        <input type="text" class="form-control" value="@(Model.OrderStatus.Name)" name="OrderStatusId" readonly>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        Product List in Order
+                                    </div>
+                                    <div class="panel-body">
+                                        <table class="table table-bordered table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Product Id</th>
+                                                    <th>Product Name</th>
+                                                    <th>Price</th>
+                                                    <th>Number</th>
+                                                    <th>Amount</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach (Project.Model.Entity.OrderDetail orderDetail in Model.OrderDetail)
+                                                {
+                                                    <tr>
+                                                        <td>@orderDetail.ProductCode</td>
+                                                        <td>@orderDetail.ProductName</td>
+                                                        <td>@orderDetail.ProductPrice</td>
+                                                        <td>@orderDetail.Quantity</td>
+                                                        <td>@(orderDetail.ProductPrice* orderDetail.Quantity)</td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+</div>
