@@ -50,27 +50,27 @@ namespace Project.Model.Context
             IList<OrderStatus> orderStatusList = new List<OrderStatus>();
             orderStatusList.Add(new OrderStatus()
             {
-                Name = "Yeni"
+                Name = "New"
             });
 
             orderStatusList.Add(new OrderStatus()
             {
-                Name = "Hazırlanıyor"
+                Name = "Preparing"
             });
 
             orderStatusList.Add(new OrderStatus()
             {
-                Name = "Kargoda"
+                Name = "Cargo"
             });
 
             orderStatusList.Add(new OrderStatus()
             {
-                Name = "Teslim Edildi"
+                Name = "Delivered"
             });
 
             orderStatusList.Add(new OrderStatus()
             {
-                Name = "İptal"
+                Name = "Cancel"
             });
 
 
