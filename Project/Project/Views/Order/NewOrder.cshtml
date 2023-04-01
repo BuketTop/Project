@@ -1,0 +1,153 @@
+﻿@model List<Project.Model.Entity.OrderStatus>
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="row">
+    <div class="col-lg-12">
+        <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="/Order/OrderList">Order List</a></li>
+            <li class="active">Order Detail</li>
+        </ol>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                New Order
+            </div>
+            <div class="panel-body">
+                <form class="form" action="/Order/NewOrder" method="post">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Name</label>
+                                <input type="text" class="form-control" name="Name">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Surname</label>
+                                <input type="text" class="form-control" name="Surname">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Mail</label>
+                                <input type="email" class="form-control" name="Mail">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Phone</label>
+                                <input type="tel" class="form-control" name="PhoneNumber">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    Product List in Order
+                                </div>
+                                <div class="panel-body">
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Product Id</th>
+                                                <th>Product Name</th>
+                                                <th>Price</th>
+                                                <th>Number</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <input type="text" class="form-control" name="OrderDetail[0].ProductCode" />
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control" name="OrderDetail[0].ProductName" />
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control" name="OrderDetail[0].ProductPrice" />
+                                                </td>
+                                                <td>
+                                                    <input type="number" class="form-control" name="OrderDetail[0].Quantity" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="text" class="form-control" name="OrderDetail[1].ProductCode" />
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control" name="OrderDetail[1].ProductName" />
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control" name="OrderDetail[1].ProductPrice" />
+                                                </td>
+                                                <td>
+                                                    <input type="number" class="form-control" name="OrderDetail[1].Quantity" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="text" class="form-control" name="OrderDetail[2].ProductCode" />
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control" name="OrderDetail[2].ProductName" />
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control" name="OrderDetail[2].ProductPrice" />
+                                                </td>
+                                                <td>
+                                                    <input type="number" class="form-control" name="OrderDetail[2].Quantity" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="text" class="form-control" name="OrderDetail[3].ProductCode" />
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control" name="OrderDetail[3].ProductName" />
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control" name="OrderDetail[3].ProductPrice" />
+                                                </td>
+                                                <td>
+                                                    <input type="number" class="form-control" name="OrderDetail[3].Quantity" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="text" class="form-control" name="OrderDetail[4].ProductCode" />
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control" name="OrderDetail[4].ProductName" />
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control" name="OrderDetail[4].ProductPrice" />
+                                                </td>
+                                                <td>
+                                                    <input type="number" class="form-control" name="OrderDetail[4].Quantity" />
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
