@@ -207,11 +207,15 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Context\AlisMatbaaDbContext.cs" />
+    <Compile Include="Models\Entity\Currency.cs" />
     <Compile Include="Models\Entity\Order.cs" />
     <Compile Include="Models\Entity\OrderDetail.cs" />
     <Compile Include="Models\Entity\OrderStatus.cs" />
+    <Compile Include="Models\Entity\Product.cs" />
+    <Compile Include="Models\Entity\ProductOptions.cs" />
     <Compile Include="Models\Entity\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\NewOrderViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -252,8 +256,12 @@
     <Folder Include="Content\Site\images\clients\" />
     <Folder Include="Views\AlisMatbaaDbContext\" />
     <Folder Include="Views\AlisMatbaaDvContext\" />
+    <Folder Include="Views\Currency\" />
+    <Folder Include="Views\NewOrderViewModel\" />
     <Folder Include="Views\OrderDetail\" />
     <Folder Include="Views\OrderStatus\" />
+    <Folder Include="Views\ProductOptions\" />
+    <Folder Include="Views\Product\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

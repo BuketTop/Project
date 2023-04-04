@@ -17,9 +17,25 @@ namespace Project.Model.Context
         public DbSet<Order> Order { get; set; }
         public DbSet<OrderDetail> OrderDetail { get; set; }
 
+        public DbSet<Currency> Currency { get; set; }
+        public DbSet<Product> Product { get; set; }
+        public DbSet<ProductOption> ProductOption { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+
+            modelBuilder.Entity<OrderDetail>().Property(a => a.Price).HasPrecision(12, 2);
+            modelBuilder.Entity<OrderDetail>().Property(a => a.TRYPrice).HasPrecision(12, 2);
+            modelBuilder.Entity<OrderDetail>().Property(a => a.TRYRate).HasPrecision(12, 2);
+            modelBuilder.Entity<OrderDetail>().Property(a => a.TRYTotal).HasPrecision(12, 2);
+
+
+            modelBuilder.Entity<OrderDetail>()
+                .HasRequired<ProductOption>(s => s.ProductOption)
+                .WithMany(g => g.OrderDetail)
+                .HasForeignKey<int>(s => s.ProductOptionId)
+                .WillCascadeOnDelete(false);
 
             base.OnModelCreating(modelBuilder);
         }
@@ -50,27 +66,27 @@ namespace Project.Model.Context
             IList<OrderStatus> orderStatusList = new List<OrderStatus>();
             orderStatusList.Add(new OrderStatus()
             {
-                Name = "New"
+                Name = "Yeni"
             });
 
             orderStatusList.Add(new OrderStatus()
             {
-                Name = "Preparing"
+                Name = "Hazırlanıyor"
             });
 
             orderStatusList.Add(new OrderStatus()
             {
-                Name = "Cargo"
+                Name = "Kargoda"
             });
 
             orderStatusList.Add(new OrderStatus()
             {
-                Name = "Delivered"
+                Name = "Teslim Edildi"
             });
 
             orderStatusList.Add(new OrderStatus()
             {
-                Name = "Cancel"
+                Name = "İptal"
             });
 
 
@@ -78,6 +94,78 @@ namespace Project.Model.Context
             {
                 context.OrderStatus.Add(orderStatus);
             }
+
+
+
+            IList<Currency> currencyList = new List<Currency>();
+            currencyList.Add(new Currency()
+            {
+                Name = "TRY"
+            });
+
+            currencyList.Add(new Currency()
+            {
+                Name = "USD"
+            });
+
+            currencyList.Add(new Currency()
+            {
+                Name = "EUR"
+            });
+
+
+            foreach (Currency currency in currencyList)
+            {
+                context.Currency.Add(currency);
+            }
+
+
+            IList<Product> productList = new List<Product>();
+            productList.Add(new Product()
+            {
+                Name = "Kartvizit",
+                ProductOption = new List<ProductOption>()
+                {
+                    new ProductOption()
+                    {
+                        Name="Kuşe",
+                        CurrencyId=2,
+                        Price=1
+                    },
+                    new ProductOption()
+                    {
+                        Name="1.Hamur",
+                        CurrencyId=2,
+                        Price=2
+                    }
+                }
+            });
+            productList.Add(new Product()
+            {
+                Name = "Broşür",
+                ProductOption = new List<ProductOption>()
+                {
+                    new ProductOption()
+                    {
+                        Name="Kuşe",
+                        CurrencyId=2,
+                        Price=10
+                    },
+                    new ProductOption()
+                    {
+                        Name="1.Hamur",
+                        CurrencyId=2,
+                        Price=15
+                    }
+                }
+            });
+
+            foreach (Product product in productList)
+            {
+                context.Product.Add(product);
+            }
+
+
 
             base.Seed(context);
         }
